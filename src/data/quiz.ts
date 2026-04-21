@@ -1,0 +1,168 @@
+import { ChallengeQuestion } from '../types';
+
+export const challengeQuestions: ChallengeQuestion[] = [
+  {
+    id: 'q1',
+    question: 'What is the unofficial nickname of the city of Boulder because of its progressive spirit?',
+    options: ['Silver Capital', "People's Republic of Boulder", 'Mountain Kingdom', 'Technological Oasis'],
+    correctIndex: 1,
+    difficulty: 'easy',
+  },
+  {
+    id: 'q2',
+    question: 'How many major rock formations make up the famous "Flatirons" group?',
+    options: ['3', '5', '7', '10'],
+    correctIndex: 1,
+    difficulty: 'easy',
+  },
+  {
+    id: 'q3',
+    question: 'From which sister city was the famous "Dushanbe Teahouse" imported?',
+    options: ['Samarkand', 'Dushanbe', 'Tashkent', 'Almaty'],
+    correctIndex: 1,
+    difficulty: 'easy',
+  },
+  {
+    id: 'q4',
+    question: 'What is the maximum height allowed for buildings in Boulder to avoid blocking the view of the mountains?',
+    options: ['30 meters', '16 meters (55 feet)', '50 meters', '10 meters'],
+    correctIndex: 1,
+    difficulty: 'medium',
+  },
+  {
+    id: 'q5',
+    question: 'How many days of sunshine does Boulder get per year on average?',
+    options: ['150', '200', '300', '365'],
+    correctIndex: 2,
+    difficulty: 'easy',
+  },
+  {
+    id: 'q6',
+    question: 'Which famous Hollywood actor worked as a waiter at The Sink before he became famous?',
+    options: ['Brad Pitt', 'Robert Redford', 'Tom Cruise', 'Leonardo DiCaprio'],
+    correctIndex: 1,
+    difficulty: 'medium',
+  },
+  {
+    id: 'q7',
+    question: 'What exactly does the NIST Institute in Boulder regulate for the entire United States?',
+    options: ['Gold prices', 'Internet speed', 'Official atomic time', 'Rainfall rates'],
+    correctIndex: 2,
+    difficulty: 'medium',
+  },
+  {
+    id: 'q8',
+    question: 'What is the distance of the annual legendary Bolder Boulder race?',
+    options: ['5 km', '10 km', '21 km (Half Marathon)', '42 km (Marathon)'],
+    correctIndex: 1,
+    difficulty: 'easy',
+  },
+  {
+    id: 'q9',
+    question: 'Why did the first settlers call the main rocks of the city "Flatirons"?',
+    options: [
+      'Because they are very hot in the summer',
+      'Because of their shape, which resembled old flatirons',
+      'Because of the metal composition of the rock',
+      'It was the surname of the first hiker',
+    ],
+    correctIndex: 1,
+    difficulty: 'medium',
+  },
+  {
+    id: 'q10',
+    question: 'Which street in Boulder is completely pedestrianized and is considered the heart of the city?',
+    options: ['Broadway', 'Pearl Street Mall', 'Canyon Boulevard', 'Arapahoe Avenue'],
+    correctIndex: 1,
+    difficulty: 'easy',
+  },
+  {
+    id: 'q11',
+    question: 'At what altitude is the city of Boulder located?',
+    options: ['500 meters', '1000 meters', '~1655 meters', '3000 meters'],
+    correctIndex: 2,
+    difficulty: 'medium',
+  },
+  {
+    id: 'q12',
+    question: 'Which architect designed the futuristic NCAR building?',
+    options: ['Frank Lloyd Wright', 'I.M. Pei', 'Zaha Hadid', 'Le Corbusier'],
+    correctIndex: 1,
+    difficulty: 'hard',
+  },
+  {
+    id: 'q13',
+    question: 'Which iconic 1970s TV series was set in Boulder?',
+    options: ['Friends', 'Mork and Mindy', 'Twin Peaks', 'Star Trek'],
+    correctIndex: 1,
+    difficulty: 'hard',
+  },
+  {
+    id: 'q14',
+    question: "What is the name of the city's main river path for walking and cycling?",
+    options: ['Mountain Path', 'Boulder Creek Path', 'River Road', 'Canyon Trail'],
+    correctIndex: 1,
+    difficulty: 'easy',
+  },
+  {
+    id: 'q15',
+    question: 'What status does Boulder consistently hold among all cities in the United States?',
+    options: [
+      'Rainiest city',
+      'Happiest and healthiest city',
+      'City with the most cars',
+      'Oldest city in the state',
+    ],
+    correctIndex: 1,
+    difficulty: 'medium',
+  },
+  {
+    id: 'q16',
+    question: 'How many Nobel Prize winners are associated with the University of Colorado at Boulder?',
+    options: ['1', '5', '12', '0'],
+    correctIndex: 1,
+    difficulty: 'hard',
+  },
+  {
+    id: 'q17',
+    question: 'What sport is considered the "unofficial religion" of Boulder residents?',
+    options: ['Football', 'Baseball', 'Hiking and running', 'Golf'],
+    correctIndex: 2,
+    difficulty: 'easy',
+  },
+  {
+    id: 'q18',
+    question: 'What is the name of the historic park where the 1898 auditorium building is located?',
+    options: ['Central Park', 'Chautauqua Park', 'North Park', "Settler's Park"],
+    correctIndex: 1,
+    difficulty: 'medium',
+  },
+  {
+    id: 'q19',
+    question: 'What did astronaut Scott Carpenter name his spaceship "Aurora 7" after?',
+    options: [
+      'In honor of the northern lights',
+      'In honor of the intersection where he grew up in Boulder',
+      'In honor of his daughter',
+      'It was the name of his first school',
+    ],
+    correctIndex: 1,
+    difficulty: 'hard',
+  },
+  {
+    id: 'q20',
+    question: 'What type of tax was Boulder the first in the United States to impose on businesses and residents?',
+    options: [
+      'Sugar tax',
+      'Carbon tax (to protect the climate)',
+      'Forest tax',
+      'Sunlight tax',
+    ],
+    correctIndex: 1,
+    difficulty: 'hard',
+  },
+];
+
+export const CHALLENGE_TIME_PER_QUESTION = 15;
+export const QUESTIONS_PER_LEVEL = 5;
+export const TOTAL_LEVELS = Math.ceil(challengeQuestions.length / QUESTIONS_PER_LEVEL);
