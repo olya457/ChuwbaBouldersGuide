@@ -12,8 +12,8 @@ workflows:
       vars:
         APP_STORE_APPLE_ID: 6762815097
         BUNDLE_ID: 'com.nimobecnacex.nelonacevexon'
-        XCODE_WORKSPACE: 'LettoMaxChoiceType.xcworkspace'
-        XCODE_SCHEME: 'LettoMaxChoiceType'
+        XCODE_WORKSPACE: 'ChuwbaBouldersGuide.xcworkspace'
+        XCODE_SCHEME: 'ChuwbaBouldersGuide'
     scripts:
       - name: Install node modules
         script: |
